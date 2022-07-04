@@ -1,0 +1,129 @@
+:root{
+    --primary-color:green;
+    --white-color:#fefee2;
+    --hover_link:orange;
+}
+
+section{
+    width:70%;
+    margin: auto;
+}
+
+header{
+    height: 50px;
+    background-color: var(--primary-color);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 1.2rem;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+ li a{
+    text-decoration: none;
+    margin: 15px;
+    color: #fefee2;
+ }
+
+ li a:hover{
+    color: var(--hover_link);
+ }
+
+ h1{
+    text-align: center;
+ }
+
+ form{
+    text-align: center;
+ }
+
+
+
+ .input{
+    border: 2px, solid, black;
+    padding: 10px 50px;
+ }
+
+ button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    background-color: lightgreen;
+    border-radius: 10%;
+    font-weight: bold;
+    width: 307px;
+    font-size: larger;
+ }
+
+ .modify{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    background-color: var(--hover_link);
+    border-radius: 10%;
+    font-weight: bold;
+    width: 307px;
+    font-size: larger;
+ }
+
+ .delete{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    background-color: red;
+    border-radius: 10%;
+    font-weight: bold;
+    width: 307px;
+    font-size: larger;
+ }
+
+ .booksList{
+    text-align: center;
+ }
+
+ div{
+    margin-top: 30px;
+ }
+
+ #modify-isbn, #modify-title, #modify-book_date, #modify-book_editing, #modify-book_picture{
+    width: 407px;
+    text-align: center;
+    font-size: large;
+ }
+
+ #book_author{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: lightgray;
+    font-weight: bold;
+    width: 307px;
+    font-size: larger;
+ }
+
+ .button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+    background-color: var(--hover_link);
+    border-radius: 10%;
+    font-weight: bold;
+    width: 307px;
+    font-size: larger;
+ }
