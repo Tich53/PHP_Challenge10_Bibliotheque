@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once '/home/richubuntu/Info.prog/Projets/Projet-bibliotheque/Identifiants/connec.php'; 
+require_once '../Identifiants/connec.php'; 
 $pdo = new \PDO(DSN, USER, PASS);
 
     if (isset($_POST['id'])) {
@@ -50,6 +50,8 @@ $pdo = new \PDO(DSN, USER, PASS);
             <li><a href="logout.php">Se déconnecter</a></li>
         </ul>
     </nav>
+    <?php echo 'Bienvenue '. $_SESSION['login'];?>
+
 </header>
 
 <section>

@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-require_once '/home/richubuntu/Info.prog/Projets/Projet-bibliotheque/Identifiants/connec.php'; 
-$pdo = new \PDO(DSN, USER, PASS, [PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC]);
+require_once '../Identifiants/connec.php'; 
+$pdo = new \PDO(DSN, USER, PASS);
 
 $bookList = 'SELECT books.*, lastname_author, firstname_author FROM books JOIN authors ON books.author_id=authors.id';
 $statement = $pdo->query($bookList);

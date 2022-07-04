@@ -1,5 +1,7 @@
 <?php
-require_once '/home/richubuntu/Info.prog/Projets/Projet-bibliotheque/Identifiants/connec.php'; 
+session_start();
+
+require_once '../Identifiants/connec.php'; 
 $pdo = new \PDO(DSN, USER, PASS);
 
 //création de la requête pour afficher le formulaire de modification
@@ -29,6 +31,7 @@ $pdo = new \PDO(DSN, USER, PASS);
                     <li><a href="logout.php">Se déconnecter</a></li>
                 </ul>
             </nav>
+            <?php echo 'Bienvenue '. $_SESSION['login']; ?>
     </header>
     <section>
     <h1>Modifier ou supprimer un livre</h1>

@@ -1,5 +1,7 @@
 <?php
-require_once '/home/richubuntu/Info.prog/Projets/Projet-bibliotheque/Identifiants/connec.php';
+session_start();
+
+require_once '../Identifiants/connec.php'; 
 $pdo = new \PDO(DSN, USER, PASS);
 
 if (isset($_POST["lastname"], $_POST["firstname"])) {
@@ -42,6 +44,7 @@ if (isset($_POST["lastname"], $_POST["firstname"])) {
                 <li><a href="modification_livre.php">Modifier / supprimer un livre</a></li>
             </ul>
         </nav>
+        <?php echo 'Bienvenue '. $_SESSION['login']; ?>
     </header>
     
 <!-- Formulaire de création livre  -->

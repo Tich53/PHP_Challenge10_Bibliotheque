@@ -1,5 +1,7 @@
 <?php
-require_once './Identifiants/connec.php'; 
+session_start();
+
+require_once '../Identifiants/connec.php'; 
 $pdo = new \PDO(DSN, USER, PASS);
 
 if (isset($_POST["isbn"], $_POST["title"], $_POST["book_date"], $_POST["book_editing"], $_POST["book_author"])) { 
@@ -57,6 +59,7 @@ if (isset($_POST["isbn"], $_POST["title"], $_POST["book_date"], $_POST["book_edi
             <li><a href="logout.php">Se déconnecter</a></li>
         </ul>
     </nav>
+    <?php echo 'Bienvenue '. $_SESSION['login']; ?>
 </header>
 
 <!-- Formulaire de création livre  -->
